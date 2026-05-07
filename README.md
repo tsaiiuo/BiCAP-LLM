@@ -91,7 +91,7 @@ BiCAP-LLM/
 
 The PEMS traffic datasets are not included in this repository. Download and place them as follows:
 
-1. Download PEMS03, PEMS04, PEMS07, PEMS08 from [ASTGNN](https://github.com/guoshnBJTU/ASTGNN).
+1. Download PEMS03, PEMS04, PEMS07, PEMS08 from a public data repository.
 
 2. Organize under `data/traffic/`:
 ```
