@@ -23,10 +23,9 @@ BiCAP-LLM consists of five stages:
 - Python 3.8+
 - PyTorch 2.4+
 - CUDA 11.8+
-- transformers (HuggingFace)
 
 ```bash
-conda activate ST-PEMLLM
+pip install -r requirements.txt
 ```
 
 ## Quick Start
