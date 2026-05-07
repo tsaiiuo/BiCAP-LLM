@@ -1,0 +1,38 @@
+# Experiment outputs
+analysis/
+scripts/
+logs/
+experiments/
+
+# Data (download separately, see README)
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment secrets
+.env
+
+# Misc
+*.log
