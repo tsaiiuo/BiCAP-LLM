@@ -10,7 +10,7 @@ BiCAP-LLM consists of five stages:
 
 1. **Spatial-Temporal Embedding** — Historical traffic input (B, T, N, F) is augmented with temporal embeddings (day-of-week + time-of-day via learned lookup tables) and spectral node embeddings (Laplacian eigenvectors projected through a linear layer) to encode both temporal periodicity and spatial graph topology.
 
-2. **BiCAP Spatial Perceiver** — A bidirectional cross-attention perceiver (BiXT, NeurIPS'24) compresses N sensor nodes into M latent tokens via cross-attention encoding, then reconstructs back to N nodes via cross-attention decoding with a gating mechanism. This reduces the spatial dimension for efficient LLM processing while preserving graph structure.
+2. **BiCAP Spatial Perceiver** — A bidirectional cross-attention perceiver compresses N sensor nodes into M latent tokens via cross-attention encoding, then reconstructs back to N nodes via cross-attention decoding with a gating mechanism. This reduces the spatial dimension for efficient LLM processing while preserving graph structure.
 
 3. **Statistical Prompt Generator** — Automatically constructs natural language prompts from the input data at four levels: *simple* (time-of-day + traffic period label), *enhanced* (detailed traffic descriptions with expectations), *task* (task-oriented instructions with node count and prediction horizon), and *task_enhanced* (task instructions enriched with real-time batch statistics such as mean flow, standard deviation, peak hour ratios, and congestion indicators). These prompts are tokenized and embedded alongside traffic tokens to provide semantic guidance to the LLM.
 
